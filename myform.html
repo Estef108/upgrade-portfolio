@@ -1,0 +1,55 @@
+<h1>Antes de nada, queremos conocerte mejor...</h1>
+
+<form action="https://reqres.in/api/users" method="POST">
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="lname">Apellido</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="city">¿De qué ciudad eres?</label>
+        <select id="city" name="city">
+            <option value="Madrid">Madrid</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Valencia">Valencia</option>
+            <option value="Sevilla">Sevilla</option>
+        </select>
+        <label for="newsletter">¿Quieres suscribirte a nuestra newsletter?</label>
+        <input type="checkbox" id="newsletter">
+
+        <label for="color">¿Cuál es tu color favorito?</label>
+        <input type="color" id="color">
+        <br>    
+        <label for="age">¿Cuál es tu edad?</label>
+        <input type="number" id="age" name="age" min="18" max="100">
+
+        <label for="dateofbirth">¿Cuál es tu fecha de nacimiento?</label>
+        <input type="date" id="dateofbirth" name="dateofbirth" min="2003-01-01" max="2020-12-31">
+        <br>
+        <label for="preferences">¿Qué es lo que más te gusta coser?</label>
+        <br>
+        <label for="prendas">
+            <input type="radio" id="prendas" name="preferences" value="prendas">
+            Prendas
+        </label>
+        <br>
+        <label for="complementos">
+            <input type="radio" id="complementos" name="preferences" value="complementos">
+            Complementos
+        </label>
+        <br>
+        <label for="arreglos">
+            <input type="radio" id="arreglos" name="preferences" value="arreglos">
+            Arreglos
+        </label>
+        <br>
+        <label for="textarea">¿Qué quieres contarnos?</label>
+        <textarea id="textarea" maxlength="250" >
+
+        </textarea>
+        <button type="submit">Enviar</button>
+    </fieldset>
+</form>
